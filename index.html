@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruma & Tostado | Café de Especialidad</title>
+    <link rel="stylesheet" href="style      .css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <a href="#" class="logo">BRUMA <span>&</span> TOSTADO</a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#nosotros">Nuestra Marca</a>
+            <a href="#destacados">Destacados</a>
+            <a href="#ubicacion">Horarios y Ubicación</a>
+            <button class="btn-carrito" id="abrirCarrito">
+                Pedido (<span id="contadorCarrito">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero / Presentación de la Marca -->
+    <section id="nosotros" class="hero">
+        <div class="hero-content">
+            <div class="estado-badge" id="estadoTienda">
+                <span class="punto"></span>
+                <span id="textoEstado">Verificando horario...</span>
+            </div>
+            <h1>Café de especialidad tostado en lotes pequeños</h1>
+            <p>Seleccionamos granos de altura y los preparamos con precisión artesanal. Ven a disfrutar de un espacio tranquilo, buena música y bollería recién salida del horno.</p>
+            <div class="hero-actions">
+                <a href="#destacados" class="btn btn-primary">Explorar Destacados</a>
+                <a href="#ubicacion" class="btn btn-secondary">Cómo Llegar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Productos Destacados con Precio y Acción -->
+    <section id="destacados" class="container">
+        <div class="section-header">
+            <span class="tag">Selección de la Casa</span>
+            <h2>Productos Destacados</h2>
+            <p>Agrega tus favoritos a tu orden rápida para retirar en barra sin filas.</p>
+        </div>
+
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Flat White Doble">
+                    <span class="badge-top">Más pedido</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title-row">
+                        <h3>Flat White Doble</h3>
+                        <span class="precio">$3.600</span>
+                    </div>
+                    <p>Doble extracción de espresso origen Etiopía con leche cremada a temperatura exacta y notas a avellana.</p>
+                    <button class="btn-agregar" data-nombre="Flat White Doble" data-precio="3600">
+                        + Agregar al pedido
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Croissant de Pistacho">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-row">
+                        <h3>Croissant Pistacho</h3>
+                        <span class="precio">$3.400</span>
+                    </div>
+                    <p>Masa laminada con mantequilla francesa, relleno de crema artesanal de pistacho tostado y praliné.</p>
+                    <button class="btn-agregar" data-nombre="Croissant Pistacho" data-precio="3400">
+                        + Agregar al pedido
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Cold Brew Tónica">
+                </div>
+                <div class="card-body">
+                    <div class="card-title-row">
+                        <h3>Cold Brew Naranja</h3>
+                        <span class="precio">$4.100</span>
+                    </div>
+                    <p>Extracción en frío por 18 horas, servido con hielo cristalino, piel de naranja deshidratada y un toque de miel.</p>
+                    <button class="btn-agregar" data-nombre="Cold Brew Naranja" data-precio="4100">
+                        + Agregar al pedido
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección Horarios, Ubicación y Contacto -->
+    <section id="ubicacion" class="info-wrapper">
+        <div class="container info-grid">
+            <!-- Horarios dinámicos -->
+            <div class="panel">
+                <h2>Horarios de Atención</h2>
+                <p class="panel-desc">Te esperamos desde temprano para tu primer café del día.</p>
+                <ul class="horarios-lista" id="listaHorarios">
+                    <li data-dias="1,2,3,4,5">
+                        <span>Lunes a Viernes</span>
+                        <strong>07:30 – 20:00</strong>
+                    </li>
+                    <li data-dias="6">
+                        <span>Sábados</span>
+                        <strong>08:30 – 21:00</strong>
+                    </li>
+                    <li data-dias="0">
+                        <span>Dom
